@@ -19,23 +19,21 @@ function Contact() {
       <div className="touch">
         <h1>GET IN TOUCH</h1>
         <p><strong>Name:</strong> Yasmin Ali Aime</p>
-        <p><strong>Email:</strong> jzzmiiinnali@gmail.com</p>
-        <p><strong>Mobile:</strong> +251961970874</p>
+        <p><strong>Email:</strong> <a href="mailto:jzzmiiinnali@gmail.com">jzzmiiinnali@gmail.com</a></p>
+        <p><strong>Mobile:</strong> <a href="tel:+251961970874">+251 961 970 874</a></p>
         <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
       </div>
       <div className="form">
         <form onSubmit={handleSubmit}>
           <h3>Contact Me</h3> 
           <br />
-          <label htmlFor="name">Name:</label>
           <br />
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" id="name" name="name" placeholder='Name' value={formData.name} onChange={handleChange} required />
           <br /><br />
-          <label htmlFor="message">Message:</label>
           <br />
-          <textarea id="message" name="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
+          <textarea id="message" name="message" placeholder='Message' rows="4" value={formData.message} onChange={handleChange} required></textarea>
           <br /><br />
-          <button type="submit">SEND MESSAGE</button>
+          <button type="submit">SEND</button>
         </form>
       </div>
     </div>

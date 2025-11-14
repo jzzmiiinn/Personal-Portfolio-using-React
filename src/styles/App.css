@@ -391,12 +391,25 @@ button {
 #contact input, textarea {
     padding: 7px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 4px;
     width: 200px;
     &:focus {
         border: 2px solid white;
         box-shadow: 20px black;
     }
+}
+#contact textarea::placeholder, input::placeholder {
+  color: white;
+  opacity: 0.7;
+  font-size: 14px;
+}
+#contact a {
+  color: black;
+  text-decoration: underline;
+}
+#contact a:hover {
+  text-decoration: underline;
+  color: #ffc107;
 }
 #contact button {
     background-color: black;
